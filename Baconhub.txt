@@ -4,7 +4,7 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 --------------------------------------------------------------------------------------------------------------------------------------------
 local Window = Fluent:CreateWindow({
     Title = "Bacon Hub ",
-    SubTitle = "by Bacon Hack Pro",
+    SubTitle = "by binhnguyen91156",
     TabWidth = 160,
     Size = UDim2.fromOffset(450, 300),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
@@ -2569,7 +2569,7 @@ local posZ = 0
 
 
     Tabs.Main:AddButton({
-        Title = "Fps Booster",
+        Title = "Máy Mày yếu Bật",
         Description = "Boost your fps",
         Callback = function()
             FPSBooster()
@@ -2621,12 +2621,12 @@ local posZ = 0
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Mastery
     Tabs.Main:AddParagraph({
-        Title = "Mastery Farm",
+        Title = "Farm Thông Thạo",
         Content = "Auto farm your mastery"
     })
 
     local DropdownMastery = Tabs.Main:AddDropdown("DropdownMastery", {
-        Title = "Farm Mode",
+        Title = "Farm Quái Gần",
         Values = {"Level","Near Mobs",},
         Multi = false,
         Default = 1,
@@ -3165,7 +3165,7 @@ end)
 
 
 Tabs.Main:AddParagraph({
-    Title = "Misc Farm",
+    Title = "Farm Xương All",
     Content = "Bone & Cake Prince & "
 })
 
@@ -3372,7 +3372,7 @@ spawn(function()
 
 
     Tabs.Main:AddParagraph({
-        Title = "Boss Farm",
+        Title = "Trùm Farm",
         Content = ""
     })
 
@@ -3480,7 +3480,7 @@ spawn(function()
 
 
     Tabs.Main:AddParagraph({
-        Title = "Material",
+        Title = "Farm Nguyên Liệu",
         Content = "Auto farm material"
     })
 
@@ -3752,7 +3752,7 @@ if Third_Sea then
 
 
      Tabs.Main:AddParagraph({
-        Title = "Elite Hunter",
+        Title = "Boss bí ẩn",
         Content = "Auto find and kill boss elite"
     })
 
@@ -3829,7 +3829,7 @@ if Third_Sea then
 if Third_Sea then
 
        Tabs.Main:AddParagraph({
-        Title = "Sea Beast",
+        Title = "Rắn biển",
         Content = "Auto Kill Sea Beast"
     })
 
@@ -3986,7 +3986,7 @@ ToggleAutoW:OnChanged(function(Value)
 
 
  Tabs.Main:AddParagraph({
-    Title = "Mirage Island",
+    Title = "Đảo bí ẩn 🏝️",
     Content = "Auto Summon Mystic Island"
 })
 
@@ -4076,7 +4076,7 @@ end
 
 
      Tabs.Main:AddParagraph({
-        Title = "Items",
+        Title = "Vật Phẩm",
         Content = "Auto get items"
     })
 
@@ -4349,11 +4349,11 @@ end
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Setting
     Tabs.Setting:AddParagraph({
-        Title = "Setting",
+        Title = "Tùy chỉnh",
         Content = "Setting Farm"
     })
 
-    local ToggleFastAttack = Tabs.Setting:AddToggle("ToggleFastAttack", {Title = "Fast Attack", Default = true })
+    local ToggleFastAttack = Tabs.Setting:AddToggle("ToggleFastAttack", {Title = "Đánh Nhanh", Default = true })
     ToggleFastAttack:OnChanged(function(vu)
         FastAttack = vu
     end)
@@ -4532,7 +4532,7 @@ ToggleRemove:OnChanged(function(Value)
 
 
 Tabs.Setting:AddParagraph({
-    Title = "Setting Skill",
+    Title = "Tùy chỉnh Farm",
     Content = "Skill use for farm mastery"
 })
 
@@ -4644,7 +4644,7 @@ spawn(function()
         if _G.Auto_Stats_Sword then
             local args = {
                 [1] = "AddPoint",
-                [2] = "Sword",
+                [2] = "kiếm",
                 [3] = 3
             }
                         
@@ -4658,7 +4658,7 @@ spawn(function()
         if _G.Auto_Stats_Defense then
             local args = {
                 [1] = "AddPoint",
-                [2] = "Defense",
+                [2] = "Máu",
                 [3] = 3
             }
                         
@@ -4744,12 +4744,12 @@ Options.ToggleQuanSat:SetValue(false)
 -----------------------------------------------------------------------------------------------------------------------------------------------
 --Teleport
 Tabs.Teleport:AddParagraph({
-    Title = "World",
+    Title = "Thế giới",
     Content = "Sea1 & Sea2 & Sea3"
 })
 
 Tabs.Teleport:AddButton({
-    Title = "First Sea",
+    Title = "1",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelMain")
@@ -4759,7 +4759,7 @@ Tabs.Teleport:AddButton({
 
 
 Tabs.Teleport:AddButton({
-    Title = "Second Sea",
+    Title = "2",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelDressrosa")
@@ -4769,7 +4769,7 @@ Tabs.Teleport:AddButton({
 
 
 Tabs.Teleport:AddButton({
-    Title = "Third Sea",
+    Title = "3",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelZou")
@@ -4779,7 +4779,7 @@ Tabs.Teleport:AddButton({
 
 
 Tabs.Teleport:AddParagraph({
-    Title = "Island",
+    Title = "Map",
     Content = "Teleport to Island"
 })
 
@@ -5809,7 +5809,7 @@ end)
 
 
 Tabs.Race:AddParagraph({
-    Title = "Misc Race",
+    Title = "Misc Tộc",
     Content = "Auto Farm Acient Quest"
 })
 
@@ -5920,7 +5920,7 @@ spawn(function()
 
 
 Tabs.Shop:AddButton({
-	Title = "Geppo",
+	Title = "Nhảy",
 	Description = "",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Geppo")
@@ -5930,7 +5930,7 @@ Tabs.Shop:AddButton({
 
 
 Tabs.Shop:AddButton({
-	Title = "Buso Haki",
+	Title = "Haki lồn",
 	Description = "",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Buso")
@@ -5941,7 +5941,7 @@ Tabs.Shop:AddButton({
 
 
 Tabs.Shop:AddButton({
-	Title = "Soru",
+	Title = "tốc biến",
 	Description = "",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyHaki","Soru")
@@ -5950,7 +5950,7 @@ Tabs.Shop:AddButton({
 
 
 Tabs.Shop:AddButton({
-	Title = "Ken Haki",
+	Title = "Quang sát",
 	Description = "",
 	Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("KenTalk","Buy")
@@ -5966,7 +5966,7 @@ Tabs.Shop:AddParagraph({
 
 
 Tabs.Shop:AddButton({
-	Title = "Black Leg",
+	Title = "Chân đen",
 	Description = "",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyBlackLeg")
@@ -5974,21 +5974,21 @@ Tabs.Shop:AddButton({
 })
 
 Tabs.Shop:AddButton({
-	Title = "Electro",
+	Title = "Tay điện",
 	Description = "",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectro")
 	end
 })
 Tabs.Shop:AddButton({
-	Title = "Fishman Karate",
+	Title = "Võ cá 🐟",
 	Description = "",
 	Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyFishmanKarate")
 	end
 })
 Tabs.Shop:AddButton({
-	Title = "Dragon Claw",
+	Title = "Tay rồng",
 	Description = "",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","DragonClaw","1")
@@ -5996,21 +5996,21 @@ Tabs.Shop:AddButton({
 	end
 })
 Tabs.Shop:AddButton({
-	Title = "Superhuman",
+	Title = "Super v1",
 	Description = "",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySuperhuman")
 	end
 })
 Tabs.Shop:AddButton({
-	Title = "Death Step",
+	Title = "Chân Đen v2",
 	Description = "",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDeathStep")
 	end
 })
 Tabs.Shop:AddButton({
-	Title = "Sharkman Karate",
+	Title = "Tay cá 🐟 v2",
 	Description = "",
 	Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuySharkmanKarate",true)
@@ -6018,21 +6018,21 @@ Tabs.Shop:AddButton({
 	end
 })
 Tabs.Shop:AddButton({
-	Title = "Electric Claw",
+	Title = "Tay điện v2",
 	Description = "",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyElectricClaw")
 	end
 })
 Tabs.Shop:AddButton({
-	Title = "Dragon Talon",
+	Title = "Tay rồng v2",
 	Description = "",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyDragonTalon")
 	end
 })
 Tabs.Shop:AddButton({
-	Title = "Godhuman",
+	Title = "Super v2",
 	Description = "",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BuyGodhuman")
@@ -6041,12 +6041,12 @@ Tabs.Shop:AddButton({
 
 
 Tabs.Shop:AddParagraph({
-	Title = "Items",
+	Title = "Vật phẩm",
 	Content = ""
 })
 
 Tabs.Shop:AddButton({
-	Title = "Refund Stats",
+	Title = "hoàng trả chỉ số",
 	Description = "",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Refund","1")
@@ -6054,7 +6054,7 @@ Tabs.Shop:AddButton({
 	end
 })
 Tabs.Shop:AddButton({
-	Title = "Reroll Race",
+	Title = "Đổi tộc",
 	Description = "",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Reroll","1")
@@ -6065,7 +6065,7 @@ Tabs.Shop:AddButton({
 --misc
 
 Tabs.Misc:AddButton({
-	Title = "Rejoin Server",
+	Title = "vào lại server",
 	Description = "",
 	Callback = function()
 		game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
@@ -6075,7 +6075,7 @@ Tabs.Misc:AddButton({
 
 
 Tabs.Misc:AddButton({
-	Title = "Hop Server",
+	Title = "Chuyển Server",
 	Description = "",
 	Callback = function()
 		Hop()
@@ -6247,7 +6247,7 @@ Tabs.Misc:AddParagraph({
 
 })
 Tabs.Misc:AddButton({
-	Title = "Devil check",
+	Title = "blox check",
 	Description = "",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("GetFruits")
@@ -6268,7 +6268,7 @@ Tabs.Misc:AddButton({
 
 
 Tabs.Misc:AddButton({
-	Title = "Title Name",
+	Title = "Huy hiệu",
 	Description = "",
 	Callback = function()
 		local args = {
